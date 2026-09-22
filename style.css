@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #1769e0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #172033;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #1769e0;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+    padding: 90px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    background: linear-gradient(135deg, #eef5ff, #ffffff);
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #1769e0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #1769e0;
+}
+
+.hero-description {
+    max-width: 520px;
+    color: #647084;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    background: #1769e0;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-button:hover {
+    background: #0f55bb;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    width: 330px;
+    padding: 45px 35px;
+    background: #172033;
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero-card p {
+    color: #cbd3df;
+}
+
+
+/* GENERAL SECTION */
+
+.courses,
+.features {
+    padding: 100px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading p {
+    color: #1769e0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    margin: 8px 0 12px;
+}
+
+.section-heading span {
+    color: #647084;
+}
+
+
+/* COURSES */
+
+.course-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.course-box {
+    background: white;
+    width: 31%;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #e7ebf1;
+    transition: 0.3s;
+}
+
+.course-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.course-number {
+    color: #1769e0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.course-box h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.course-box p {
+    color: #647084;
+    margin-bottom: 20px;
+}
+
+.course-box a {
+    color: #1769e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    background: white;
+}
+
+.about-image {
+    width: 45%;
+    min-height: 420px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #1769e0, #172033);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    width: 190px;
+    height: 190px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience strong {
+    font-size: 28px;
+}
+
+.experience small {
+    font-size: 15px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.about-text > p:not(.small-title) {
+    color: #647084;
+    margin-bottom: 15px;
+}
+
+.about-points {
+    margin-top: 25px;
+    display: grid;
+    gap: 12px;
+    font-weight: bold;
+}
+
+
+/* FEATURES */
+
+.feature-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature {
+    background: white;
+    width: 31%;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #e7ebf1;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #647084;
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 80px 8%;
+    background: #1769e0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-text {
+    max-width: 600px;
+}
+
+.contact .small-title {
+    color: white;
+}
+
+.contact h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.contact-text > p:last-child {
+    color: #dce9ff;
+}
+
+.contact-info {
+    min-width: 300px;
+}
+
+.contact-info strong {
+    font-size: 18px;
+}
+
+.contact-info p {
+    color: #dce9ff;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #101827;
+    color: white;
+    text-align: center;
+    padding: 50px 8%;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-logo span {
+    color: #4d91ff;
+}
+
+footer > p {
+    color: #aeb8c8;
+    margin-top: 8px;
+}
+
+.footer-line {
+    height: 1px;
+    background: #2c3544;
+    margin: 30px 0;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .course-container,
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .course-box,
+    .feature {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 70px 6%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 38px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
